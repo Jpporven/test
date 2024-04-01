@@ -4,22 +4,24 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.XR.Content.Interaction;
+using UnityEngine.Video;
 
 public class TutorialManager : MonoBehaviour
 {
-    //Step Counts
-    public int stepCount;
-    
+    [Header("Step Counts")]
+    private int stepCount;
 
-    //Players
+
+    [Header("Players")]
     //public GameObject PlayerUI;
-    public GameObject PlayerTutorial;
+    public GameObject playerTutorial;
+    public GameObject playerMenu;
 
-    //Text
+    [Header("Text")]
     public TMP_Text tutorialText;
 
-   
-    //GameObjects
+
+    [Header("GameObjects")]
     public GameObject mainMenu;
     //public GameObject ControlModel;
     public GameObject tongs;
@@ -32,22 +34,26 @@ public class TutorialManager : MonoBehaviour
     public GameObject LookedObj;
     public GameObject desk;
     public GameObject indicator;
+    public GameObject room;
+    public GameObject video;
 
-    //Spawner
+
+    [Header("Spawner")]
     public GameObject playerSpawner;
 
-    // bools
+    [Header("Bools")]
     public bool hasBeenPressed;
     public bool experimented;
     public bool delay;
 
 
 
-    //References
+    [Header("References")]
     public XRKnob dial;
     public GameStartMenu gameStartMenu;
     public TutorialRaycast ray;
     public MovementDetection movement;
+    public VideoPlayer VideoPlayer;
    
         
 
@@ -57,76 +63,112 @@ public class TutorialManager : MonoBehaviour
         experimented = metal.GetComponent<ExperimentBool>().hasBeenExperimentedOn;
        // delay = false;
         stepCount = 0;
-       
+        indicator.SetActive(false);
         hasBeenPressed = false;
+        mainMenu.SetActive(false);
+       
 
     }
-
-    // Update is called once per frame
-    void Update()
+    public void Update()
     {
         print(stepCount);
-        //  delay = false;
-
-        if (stepCount == 1)
+    }
+    public IEnumerator Tutorial()
+    {
+        if (stepCount == 0)
         {
-            tutorialText.text =
-            // StartCoroutine(Delay());
-            tutorialText.text = "Welcome to lab lockdown Tutorial" + " Look at the Red Panels";
+            tutorialText.text = "Welcome to Lab Lockdown tutorial";
+            yield return new WaitForSeconds(1.5f);
+            stepCount++;
+        }
+
+        if(stepCount == 1)
+        {
+            tutorialText.text = "Use your head to look at the red panels";
+
+            yield return new WaitUntil(() => ray.Step1Complete == true);
             if (ray.Step1Complete == true)
             {
-                //delay = false;
-                //StartCoroutine(Delay());
+                yield return new WaitForSeconds(0.5f);
                 stepCount++;
             }
 
+            
         }
+
         if (stepCount == 2)
         {
             MovementObj.SetActive(true);
-            tutorialText.text = " Use your Left Stick to move to the circle";
-            // ControlModel.SetActive(true);
+            tutorialText.text = " Use your Left Stick to move to the circle";   
             indicator.SetActive(true);
+            yield return new WaitUntil(() => movement.Step2Complete == true);
             if (movement.Step2Complete)
             {
-                // StartCoroutine(Delay());
+                yield return new WaitForSeconds(1.5f);
                 stepCount++;
             }
-
+           
         }
+
         if (stepCount == 3)
         {
             button.SetActive(true);
             tutorialText.text = " Press the button with your hand";
             IndicatorManager.GenerateNextIndicator(0);
-
-
+            yield return new WaitUntil(() => stepCount != 3);
         }
-        if (stepCount == 4)
+        if(stepCount == 4)
         {
-           //Tong step
+            yield return new WaitUntil(() => stepCount != 4);
         }
         if (stepCount == 5)
         {
-            //metal Step
+            yield return new WaitForSeconds(1f);
             tutorialText.text = "Grab the metal with the tongs in your hands";
+            yield return new WaitUntil(() => stepCount != 5);
         }
         if (stepCount == 6)
         {
+            yield return new WaitForSeconds(1);
             tutorialText.text = "Nice Job , now use the dial to turn on the bunsen burner";
+            yield return new WaitUntil(() => dial.value == 1);
             DialMoved();
+            
         }
-        if(stepCount == 7)
+        if (stepCount == 7)
         {
+            yield return new WaitForSeconds(1);
             tutorialText.text = "Put the metal on top of the bunsen burner until it burns";
             IndicatorManager.GenerateNextIndicator(4);
+            yield return new WaitUntil(() => metal.GetComponent<ExperimentBool>().hasBeenExperimentedOn == true);
+            yield return new WaitForSeconds(2);
             BunsenBurner();
+            
         }
-        if(stepCount == 8)
+        if (stepCount == 8)
         {
-            tutorialText.text = "Congratulations , you have completed the Tutorial" + "Press the button again if you want to repeat the tutorial " +
-               "or use the main menu to start the game ";
+            tutorialText.text = "Congratulations , you have completed the Tutorial" + "Press the Tutorial button in the main if you want to repeat the tutorial " +
+               "good luck! ";
+            yield return new WaitForSeconds(5);
+            stepCount++;
+            yield return new WaitUntil(() => stepCount != 8);
         }
+        if (stepCount == 9)
+        {
+            room.SetActive(false);
+            playerTutorial.SetActive(false);
+            playerMenu.SetActive(true);
+            yield return new WaitForSeconds(2f);   
+            video.SetActive(true);
+            VideoPlayer.Play();
+            yield return new WaitForSeconds(8f);
+            mainMenu.SetActive(true);
+            yield return new WaitWhile(() => stepCount == 9);
+        }
+
+
+
+    
     }
 
    
@@ -141,7 +183,7 @@ public class TutorialManager : MonoBehaviour
             bunsenBurner.SetActive(true);
             Dial.SetActive(true);
             hasBeenPressed = true;
-            tutorialText.text = "Grab the tongs with your hand";
+            tutorialText.text = "Grab the tongs of the table with your right grip button";
             IndicatorManager.GenerateNextIndicator(1);
             
            
@@ -158,6 +200,7 @@ public class TutorialManager : MonoBehaviour
     {
         if (stepCount == 4)
         {
+            
             IndicatorManager.GenerateNextIndicator(2);
             print("Tongs were grabbed!");
             stepCount++;
@@ -208,7 +251,7 @@ public class TutorialManager : MonoBehaviour
             button.SetActive(true);
             MovementObj.SetActive(false);
             LookedObj.SetActive(false);
-            mainMenu.SetActive(true);
+            
             
            
         }
@@ -221,8 +264,8 @@ public class TutorialManager : MonoBehaviour
         
         //delay = false;  
        // StartCoroutine(Delay());
-        PlayerTutorial.SetActive(true);
-        PlayerTutorial.transform.position = playerSpawner.transform.position;
+        playerTutorial.SetActive(true);
+        playerTutorial.transform.position = playerSpawner.transform.position;
         metallicElements.SetActive(false);
         tongs.SetActive(false);
         Dial.SetActive(false);
@@ -232,17 +275,18 @@ public class TutorialManager : MonoBehaviour
         LookedObj.SetActive(false);
         desk.SetActive(false);
         indicator.SetActive(false);
-        tutorialText.text = "Welcome to Lab Lockdown";
-        mainMenu.SetActive(true);
+        stepCount = 9;
+        StartCoroutine(Tutorial());  
+
 
     }
     public void No()
     {
-        stepCount = 1;
+        
        // delay = false;  
        /// StartCoroutine(Delay());
-        PlayerTutorial.transform.position = playerSpawner.transform.position;
-        PlayerTutorial.transform.rotation = playerSpawner.transform.rotation;
+        playerTutorial.transform.position = playerSpawner.transform.position;
+        playerTutorial.transform.rotation = playerSpawner.transform.rotation;
         mainMenu.SetActive(false);
         metallicElements.SetActive(false);
         tongs.SetActive(false);
@@ -250,19 +294,10 @@ public class TutorialManager : MonoBehaviour
         bunsenBurner.SetActive(false);
         button.SetActive(false);
         MovementObj.SetActive(false);
+         StartCoroutine(Tutorial());
         
     }
 
-   /* public IEnumerator Delay()
-    {
-        if(delay == false)
-        {
-            yield return new WaitForSeconds(3);
-        }
-
-        delay = true;
-       
-    }
-   */
+ 
     
 }

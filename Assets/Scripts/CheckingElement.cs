@@ -16,7 +16,7 @@ public class CheckingElement : MonoBehaviour
             if (other.gameObject == elements[i].gameObject || isOn.isOn == false)
             {
                 Debug.Log("Should Stop");
-                particle[i].StopParticle();
+                
                 
             }
         }

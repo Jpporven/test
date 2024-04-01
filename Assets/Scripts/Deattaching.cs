@@ -8,9 +8,16 @@ using UnityEngine.SceneManagement;
 
 public class Deattaching : MonoBehaviour
 {
+
+    // Pause Menu //
+    public PauseManager pauseManager;
+
     public Timer timer;
     public InputActionProperty deattachToggle;
     public InputActionProperty pauseMenuAction;
+    public InputActionProperty notebook;
+
+    public NotebookManager notebookManager;
     XRSocketInteractor socket;
     public GameObject  tong;
     public GameObject pauseMenu;
@@ -25,58 +32,43 @@ public class Deattaching : MonoBehaviour
     public void Update()
     {
         
-        float pauseValue = pauseMenuAction.action.ReadValue<float>();
-
+        int pauseValue = pauseMenuAction.action.ReadValue<int>();
+        float noteValue = notebook.action.ReadValue<float>();
         float buttonvalue = deattachToggle.action.ReadValue<float>();
+        
+        
         //print(pauseValue);
         if (buttonvalue != 0)
         {
-           
                 socket.enabled = false;
-           
-            
-       
         }
         else
-        {
-            
-                socket.enabled = true;
-            
+             socket.enabled = true;
 
-        }
 
+        
         if (pauseValue != 0)
         {
-
-            isPaused = !isPaused;
-
+            isPaused = true;
         }
         if (isPaused == true)
         {
-            StopCoroutine(timer.lessTimer());
-            pauseMenu.SetActive(true);
+            
+           pauseManager.ActivatePauseMenu();
+           pauseMenu.SetActive(true);
         }
-        else
-        {
-            pauseMenu.SetActive(false);
-           // StartCoroutine(timer.lessTimer());
-        }
+        
             
         
-
+        if(noteValue == 1)
+        {
+            notebookManager.OpenNoteBook();
+        }
       
 
         
     }
 
-    public void QuitGame()
-    {
-        Application.Quit();
-        print("Application Closed");
-    }
-
-    public void RestartLevel()
-    {
-        SceneManager.LoadScene(1);
-    }
+    
+    
 }
