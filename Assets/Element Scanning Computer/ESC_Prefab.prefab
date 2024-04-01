@@ -1226,6 +1226,7 @@ MonoBehaviour:
   checkNO: {fileID: 5542840919133347327}
   anim: {fileID: 929353801168436021}
   checkText: {fileID: 4197440567502986626}
+  checkElement: {fileID: 0}
   elementChecked: 000000000000000000000000
 --- !u!114 &4498217031297019916
 MonoBehaviour:
@@ -1245,7 +1246,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   m_InteractionLayers:
     m_Bits: 4294967295
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 7204755924088046422}
   m_KeepSelectedTargetValid: 1
   m_DisableVisualsWhenBlockedInGroup: 1
   m_StartingSelectedInteractable: {fileID: 0}
@@ -4689,7 +4690,7 @@ Transform:
   - {fileID: 6259182705397753477}
   - {fileID: 3116147257573168573}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &929353801168436021
 Animator:
