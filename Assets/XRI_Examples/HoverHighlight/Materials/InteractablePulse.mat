@@ -101,7 +101,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _Center: {r: 13.784426, g: 2.784858, b: 0.45263284, a: 0}
-    - _Color: {r: 0.109803915, g: 0.8522254, b: 1, a: 1}
+    - _Color: {r: 1, g: 0.9758254, b: 0.10849059, a: 1}
     - _DecalPositionOffset: {r: 0, g: 0, b: 0, a: 0}
     - _DecalSize: {r: 1, g: 1, b: 0, a: 0}
     - _EdgeColor: {r: 1, g: 1, b: 1, a: 1}
