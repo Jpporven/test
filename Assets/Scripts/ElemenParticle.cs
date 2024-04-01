@@ -24,6 +24,6 @@ public class ElemenParticle : MonoBehaviour
     }
     public void StopParticle()
     {
-        flameTest?.Stop();
+        flameTest.Stop();
     }
 }

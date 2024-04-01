@@ -18,6 +18,7 @@ public class ElementCheck_Manager : MonoBehaviour
 
     public TMP_Text checkText;
 
+    public CheckingElement checkElement;
     public bool[] elementChecked;
 
 
@@ -90,7 +91,7 @@ public class ElementCheck_Manager : MonoBehaviour
                 Destroy(element);
 
                 elementChecked[4] = true;
-
+                checkElement.particle[2].StopParticle();
                 checkText.text = "Li";
             }
             else
@@ -116,7 +117,7 @@ public class ElementCheck_Manager : MonoBehaviour
                 Destroy(element);
 
                 elementChecked[10] = true;
-
+                checkElement.particle[5].StopParticle();
                 checkText.text = "Na";
             }
             else
@@ -142,7 +143,7 @@ public class ElementCheck_Manager : MonoBehaviour
                 Destroy(element);
 
                 elementChecked[5] = true;
-
+                checkElement.particle[3].StopParticle();
                 checkText.text = "Mg";
             }
             else
@@ -168,7 +169,7 @@ public class ElementCheck_Manager : MonoBehaviour
                 Destroy(element);
 
                 elementChecked[0] = true;
-
+                checkElement.particle[0].StopParticle();
                 checkText.text = "Al";
             }
             else
@@ -194,7 +195,7 @@ public class ElementCheck_Manager : MonoBehaviour
                 Destroy(element);
 
                 elementChecked[9] = true;
-
+                checkElement.particle[4].StopParticle();
                 checkText.text = "K";
             }
             else
@@ -220,7 +221,7 @@ public class ElementCheck_Manager : MonoBehaviour
                 Destroy(element);
 
                 elementChecked[1] = true;
-
+                checkElement.particle[1].StopParticle();
                 checkText.text = "Ca";
             }
             else
