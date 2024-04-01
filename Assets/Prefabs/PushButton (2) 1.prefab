@@ -25,7 +25,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8476783113314904}
-  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 18.337, y: 10.1198, z: 21.529}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -33,7 +33,7 @@ Transform:
   - {fileID: 6288955458720718506}
   m_Father: {fileID: 0}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &8499954683875655690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,12 +178,12 @@ MonoBehaviour:
   NaGE1: {fileID: 0}
   NaTS1: {fileID: 0}
   NaE1: {fileID: 0}
-  NaS1: {fileID: 437562291, guid: 8188d22a999c016438aaa22a4c89c43d, type: 2}
+  NaS1: {fileID: 0}
   NaE2: {fileID: 0}
   NaS2: {fileID: 0}
   NaE3: {fileID: 0}
   NaS3: {fileID: 0}
-  NaE4: {fileID: 421402981, guid: 8188d22a999c016438aaa22a4c89c43d, type: 2}
+  NaE4: {fileID: 0}
   NaS4: {fileID: 0}
   NaE5: {fileID: 0}
   NaS5: {fileID: 0}
@@ -192,11 +192,11 @@ MonoBehaviour:
   NaE7: {fileID: 0}
   NaS7: {fileID: 0}
   NaE8: {fileID: 0}
-  NaS8: {fileID: 535419374, guid: 8188d22a999c016438aaa22a4c89c43d, type: 2}
-  NaE9: {fileID: 1770867837, guid: 8188d22a999c016438aaa22a4c89c43d, type: 2}
+  NaS8: {fileID: 0}
+  NaE9: {fileID: 0}
   NaS9: {fileID: 0}
   NaE10: {fileID: 0}
-  NaS10: {fileID: 1749273128, guid: 8188d22a999c016438aaa22a4c89c43d, type: 2}
+  NaS10: {fileID: 0}
   NaSS1: {fileID: 0}
   NaSS2: {fileID: 0}
   NaSS3: {fileID: 0}
@@ -213,7 +213,7 @@ MonoBehaviour:
   MgTS1: {fileID: 0}
   MgGE2: {fileID: 0}
   MgTS2: {fileID: 0}
-  MgE1: {fileID: 513098588, guid: 8188d22a999c016438aaa22a4c89c43d, type: 2}
+  MgE1: {fileID: 0}
   MgS1: {fileID: 0}
   MgE2: {fileID: 0}
   MgS2: {fileID: 0}
@@ -222,7 +222,7 @@ MonoBehaviour:
   MgE4: {fileID: 0}
   MgS4: {fileID: 0}
   MgE5: {fileID: 0}
-  MgS5: {fileID: 1739680454, guid: 8188d22a999c016438aaa22a4c89c43d, type: 2}
+  MgS5: {fileID: 0}
   MgE6: {fileID: 0}
   MgS6: {fileID: 0}
   MgE7: {fileID: 0}
@@ -248,18 +248,18 @@ MonoBehaviour:
   AlAtom: {fileID: 0}
   AlGE1: {fileID: 0}
   AlTS1: {fileID: 0}
-  AlGE2: {fileID: 436928880, guid: 8188d22a999c016438aaa22a4c89c43d, type: 2}
+  AlGE2: {fileID: 0}
   AlTS2: {fileID: 0}
-  AlGE3: {fileID: 522963298, guid: 8188d22a999c016438aaa22a4c89c43d, type: 2}
+  AlGE3: {fileID: 0}
   AlTS3: {fileID: 0}
   AlE1: {fileID: 0}
-  AlS1: {fileID: 1766470871, guid: 8188d22a999c016438aaa22a4c89c43d, type: 2}
+  AlS1: {fileID: 0}
   AlE2: {fileID: 0}
   AlS2: {fileID: 0}
-  AlE3: {fileID: 1761335164, guid: 8188d22a999c016438aaa22a4c89c43d, type: 2}
+  AlE3: {fileID: 0}
   AlS3: {fileID: 0}
-  AlE4: {fileID: 402936887, guid: 8188d22a999c016438aaa22a4c89c43d, type: 2}
-  AlS4: {fileID: 1846545035, guid: 8188d22a999c016438aaa22a4c89c43d, type: 2}
+  AlE4: {fileID: 0}
+  AlS4: {fileID: 0}
   AlE5: {fileID: 0}
   AlS5: {fileID: 0}
   AlE6: {fileID: 0}
@@ -286,21 +286,21 @@ MonoBehaviour:
   AlSS12: {fileID: 0}
   AlSS13: {fileID: 0}
   NAtom: {fileID: 0}
-  NE1: {fileID: 1835048713, guid: 8188d22a999c016438aaa22a4c89c43d, type: 2}
+  NE1: {fileID: 0}
   NS1: {fileID: 0}
   NE2: {fileID: 0}
   NS2: {fileID: 0}
   NE3: {fileID: 0}
   NS3: {fileID: 0}
   NE4: {fileID: 0}
-  NS4: {fileID: 1752079889, guid: 8188d22a999c016438aaa22a4c89c43d, type: 2}
+  NS4: {fileID: 0}
   NE5: {fileID: 0}
   NS5: {fileID: 0}
   NE6: {fileID: 0}
-  NS6: {fileID: 457418769, guid: 8188d22a999c016438aaa22a4c89c43d, type: 2}
+  NS6: {fileID: 0}
   NE7: {fileID: 0}
   NS7: {fileID: 0}
-  NBE1: {fileID: 1736820722, guid: 8188d22a999c016438aaa22a4c89c43d, type: 2}
+  NBE1: {fileID: 0}
   NBE2: {fileID: 0}
   NBE3: {fileID: 0}
   NBE4: {fileID: 0}
@@ -310,7 +310,7 @@ MonoBehaviour:
   NSS1: {fileID: 0}
   NSS2: {fileID: 0}
   NSS3: {fileID: 0}
-  NSS4: {fileID: 1835772176, guid: 8188d22a999c016438aaa22a4c89c43d, type: 2}
+  NSS4: {fileID: 0}
   NSS5: {fileID: 0}
   NSS6: {fileID: 0}
   NSS7: {fileID: 0}
@@ -332,8 +332,8 @@ MonoBehaviour:
   OS6: {fileID: 0}
   OE7: {fileID: 0}
   OS7: {fileID: 0}
-  OE8: {fileID: 1839893878, guid: 8188d22a999c016438aaa22a4c89c43d, type: 2}
-  OS8: {fileID: 1832564670, guid: 8188d22a999c016438aaa22a4c89c43d, type: 2}
+  OE8: {fileID: 0}
+  OS8: {fileID: 0}
   OBE1: {fileID: 0}
   OBE2: {fileID: 0}
   OBE3: {fileID: 0}
@@ -348,12 +348,12 @@ MonoBehaviour:
   OSS5: {fileID: 0}
   OSS6: {fileID: 0}
   OSS7: {fileID: 0}
-  OSS8: {fileID: 479323871, guid: 8188d22a999c016438aaa22a4c89c43d, type: 2}
+  OSS8: {fileID: 0}
   OSS9: {fileID: 0}
   OSS10: {fileID: 0}
   FAtom: {fileID: 0}
   FE1: {fileID: 0}
-  FS1: {fileID: 1736699525, guid: 8188d22a999c016438aaa22a4c89c43d, type: 2}
+  FS1: {fileID: 0}
   FE2: {fileID: 0}
   FS2: {fileID: 0}
   FE3: {fileID: 0}
@@ -367,8 +367,8 @@ MonoBehaviour:
   FE7: {fileID: 0}
   FS7: {fileID: 0}
   FE8: {fileID: 0}
-  FS8: {fileID: 500783828, guid: 8188d22a999c016438aaa22a4c89c43d, type: 2}
-  FE9: {fileID: 1767287481, guid: 8188d22a999c016438aaa22a4c89c43d, type: 2}
+  FS8: {fileID: 0}
+  FE9: {fileID: 0}
   FS9: {fileID: 0}
   FBE1: {fileID: 0}
   FBE2: {fileID: 0}
@@ -379,12 +379,12 @@ MonoBehaviour:
   FBE7: {fileID: 0}
   FSS1: {fileID: 0}
   FSS2: {fileID: 0}
-  FSS3: {fileID: 410264583, guid: 8188d22a999c016438aaa22a4c89c43d, type: 2}
+  FSS3: {fileID: 0}
   FSS4: {fileID: 0}
   FSS5: {fileID: 0}
   FSS6: {fileID: 0}
   FSS7: {fileID: 0}
-  FSS8: {fileID: 515986861, guid: 8188d22a999c016438aaa22a4c89c43d, type: 2}
+  FSS8: {fileID: 0}
   FSS9: {fileID: 0}
   FSS10: {fileID: 0}
   BowlTarget: {fileID: 0}
