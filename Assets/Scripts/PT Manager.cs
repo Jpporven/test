@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class PTManager : MonoBehaviour
 {
-    //Notebook
-    public UngreyElements ungreyElements;
-
     //Element Number, allows for identification of the inputted element.
     public int elementNum = 0;
     public int elementCount = 0;
@@ -93,7 +90,6 @@ public class PTManager : MonoBehaviour
                     panelAluminum.SetActive(true);
                     elementCount++;
                     keyCheck();
-                    ungreyElements.UngreyElement1();
                 }
                 break;
 
@@ -104,18 +100,18 @@ public class PTManager : MonoBehaviour
                     panelCalcium.SetActive(true);
                     elementCount++;
                     keyCheck();
-                    ungreyElements.UngreyElement2();
                 }
                 break;
 
             case 3:
                 if (activeLithium == false)
                 {
+                    IndicatorManager.GenerateNextIndicator(IndicatorManager.currentIndicator++);
+
                     activeLithium = true;
                     panelLithium.SetActive(true);
                     elementCount++;
                     keyCheck();
-                    ungreyElements.UngreyElement5();
                 }
                 break;
 
@@ -126,7 +122,6 @@ public class PTManager : MonoBehaviour
                     panelMagnesium.SetActive(true);
                     elementCount++;
                     keyCheck();
-                    ungreyElements.UngreyElement6();
                 }
                 break;
 
@@ -137,7 +132,6 @@ public class PTManager : MonoBehaviour
                     panelSodium.SetActive(true);
                     elementCount++;
                     keyCheck();
-                    ungreyElements.UngreyElement3();
                 }
                 break;
 
@@ -148,7 +142,6 @@ public class PTManager : MonoBehaviour
                     panelPotassium.SetActive(true);
                     elementCount++;
                     keyCheck();
-                    ungreyElements.UngreyElement4();
                 }
                 break;
 
@@ -159,7 +152,6 @@ public class PTManager : MonoBehaviour
                     panelNitrogen.SetActive(true);
                     elementCount++;
                     keyCheck();
-                    ungreyElements.UngreyElement7();
                 }
                 break;
 
@@ -170,7 +162,6 @@ public class PTManager : MonoBehaviour
                     panelOxygen.SetActive(true);
                     elementCount++;
                     keyCheck();
-                    ungreyElements.UngreyElement8();
                 }
                 break;
 
@@ -181,7 +172,6 @@ public class PTManager : MonoBehaviour
                     panelFluorine.SetActive(true);
                     elementCount++;
                     keyCheck();
-                    ungreyElements.UngreyElement12();   
                 }
                 break;
 
@@ -192,7 +182,6 @@ public class PTManager : MonoBehaviour
                     panelPhosphorus.SetActive(true);
                     elementCount++;
                     keyCheck();
-                    ungreyElements.UngreyElement9();
                 }
                 break;
 
@@ -203,7 +192,6 @@ public class PTManager : MonoBehaviour
                     panelSulfur.SetActive(true);
                     elementCount++;
                     keyCheck();
-                    ungreyElements.UngreyElement10();
                 }
                 break;
 
@@ -214,7 +202,6 @@ public class PTManager : MonoBehaviour
                     panelChlorine.SetActive(true);
                     elementCount++;
                     keyCheck();
-                    ungreyElements.UngreyElement11();
                 }
                 break;
         }
@@ -227,6 +214,8 @@ public class PTManager : MonoBehaviour
         {
             key.SetActive(true);
             keyRend.material.color = Color.yellow;
+
+            IndicatorManager.GenerateNextIndicator(IndicatorManager.currentIndicator++);
         }
         else if (elementCount == achievementCondition) //Achievement.
         {

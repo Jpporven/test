@@ -31,7 +31,7 @@ Transform:
   m_Children:
   - {fileID: 6963233140047124178}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &8169451037577762230
 Animator:
@@ -130,6 +130,16 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: bdb4490db631f41cca7481fc0c18e2c0,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: bdb4490db631f41cca7481fc0c18e2c0,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: bdb4490db631f41cca7481fc0c18e2c0,
+        type: 3}
+      propertyPath: m_ReceiveShadows
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: bdb4490db631f41cca7481fc0c18e2c0,

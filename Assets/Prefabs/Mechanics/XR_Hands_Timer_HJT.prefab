@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: 5840718778788162320, guid: 7415f28ae303170438edca1a74f04c2a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5840718778788162320, guid: 7415f28ae303170438edca1a74f04c2a,
         type: 3}
@@ -63,13 +63,54 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6951565500760523549, guid: 7415f28ae303170438edca1a74f04c2a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8617711563095456066, guid: 7415f28ae303170438edca1a74f04c2a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8678867122604575015, guid: 7415f28ae303170438edca1a74f04c2a,
         type: 3}
       propertyPath: m_Name
       value: XR_Hands_Timer_HJT
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8678867122604575015, guid: 7415f28ae303170438edca1a74f04c2a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 4565688045235120030, guid: 7415f28ae303170438edca1a74f04c2a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 755686135264160036, guid: 7415f28ae303170438edca1a74f04c2a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3696780903620977930}
   m_SourcePrefab: {fileID: 100100000, guid: 7415f28ae303170438edca1a74f04c2a, type: 3}
+--- !u!1 &8964922426511205703 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 755686135264160036, guid: 7415f28ae303170438edca1a74f04c2a,
+    type: 3}
+  m_PrefabInstance: {fileID: 8508832396407835747}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3696780903620977930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8964922426511205703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4c126690498a413eaac738f819d7c0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hintTimer: 2
+  hintCollectionDelay: 0
+  GuidedElementStep: 0

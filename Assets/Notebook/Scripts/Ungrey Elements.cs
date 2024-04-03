@@ -5,73 +5,59 @@ using UnityEngine.UI;
 
 public class UngreyElements : MonoBehaviour
 {
-    public Button[] elements;
-  
+    public Image[] elements;
+    public Color newColor;
 
 
     //change name later according to element 
-    private void Start()
-    {
-        elements[10].gameObject.SetActive(false);
-        elements[11].gameObject.SetActive(false);
-    }
+
     public void UngreyElement1()
     {
-        elements[0].interactable = true;
+        elements[0].color = newColor;
     }
 
     public void UngreyElement2()
     {
-        elements[1].interactable = true;
+        elements[1].color = newColor;
     }
 
     public void UngreyElement3()
     {
-        elements[2].interactable = true;
+        elements[2].color = newColor;
     }
     public void UngreyElement4()
     {
-        elements[3].interactable = true;
+        elements[3].color = newColor;
     }
 
     public void UngreyElement5()
     {
-        elements[4].interactable = true;
+        elements[4].color = newColor;
     }
 
     public void UngreyElement6()
     {
-        elements[5].interactable = true;
+        elements[5].color = newColor;
     }
 
     public void UngreyElement7()
     {
-        elements[6].interactable = true;
+        elements[6].color = newColor;
     }
 
     public void UngreyElement8()
     {
-        elements[7].interactable = true;
+        elements[7].color = newColor;
     }
 
     public void UngreyElement9()
     {
-        elements[8].interactable = true;
+        elements[8].color = newColor;
     }
 
     public void UngreyElement10()
     {
-        elements[9].interactable = true;
+        elements[9].color = newColor;
     }
 
-
-    public void UngreyElement11()
-    {
-        elements[10].gameObject.SetActive(true);
-    }
-
-    public void UngreyElement12()
-    {
-        elements[11].gameObject.SetActive(true);
-    }
 }

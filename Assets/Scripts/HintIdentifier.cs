@@ -16,6 +16,7 @@ public class HintIdentifier : MonoBehaviour
     float Distance;
     public float hintTimer = 0;
     public float hintCollectionDelay;
+    public bool GuidedElementStep = false;
 
     // Update is called once per frame
     void Update()
@@ -37,7 +38,13 @@ public class HintIdentifier : MonoBehaviour
                 {
                     //relocate the hint to the assigned spawn point
                     hit.transform.gameObject.GetComponent<HintRelocator>().Relocate();
+                    if(hit.collider.name == "Lithium Hint Sheet")
+                    {
+                        IndicatorManager.GenerateNextIndicator(IndicatorManager.currentIndicator++);
+                        GuidedElementStep = true;
+                    }
                 }
+
                 
             }
             else

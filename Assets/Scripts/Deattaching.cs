@@ -10,8 +10,6 @@ public class Deattaching : MonoBehaviour
 {
 
     // Pause Menu //
-    public PauseManager pauseManager;
-
     public Timer timer;
     public InputActionProperty deattachToggle;
     public InputActionProperty pauseMenuAction;
@@ -54,7 +52,7 @@ public class Deattaching : MonoBehaviour
         if (isPaused == true)
         {
             
-           pauseManager.ActivatePauseMenu();
+           //pauseManager.ActivatePauseMenu();
            pauseMenu.SetActive(true);
         }
         
@@ -62,7 +60,7 @@ public class Deattaching : MonoBehaviour
         
         if(noteValue == 1)
         {
-            notebookManager.OpenNoteBook();
+            //notebookManager.OpenNoteBook();
         }
       
 

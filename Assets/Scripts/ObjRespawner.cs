@@ -35,6 +35,9 @@ public class ObjRespawner : MonoBehaviour
     //Rigidbody used to dump all the gameobjects rigidbodies.
     Rigidbody rb;
 
+    //Boolean that activates the method for the Indicator Manager
+    bool nextStep = false;
+
     //When something falls...
     private void OnTriggerEnter(Collider other)
     {
@@ -142,6 +145,7 @@ public class ObjRespawner : MonoBehaviour
             rb.angularVelocity = Vector3.zero;
 
             Debug.Log("Tongs respawned"); //We did it!
+            
         }
     }
 }
