@@ -2148,6 +2148,15 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Notebook"",
+                    ""type"": ""Button"",
+                    ""id"": ""abfae426-8dac-4498-b17e-d5de98b707a7"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -2170,6 +2179,17 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Menu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""76edd4c5-98d3-432f-b898-a288577144b0"",
+                    ""path"": ""<OculusTouchController>/primaryButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Notebook"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -2326,6 +2346,7 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
         m_XRToogleAttach = asset.FindActionMap("XR ToogleAttach", throwIfNotFound: true);
         m_XRToogleAttach_Deattach = m_XRToogleAttach.FindAction("Deattach", throwIfNotFound: true);
         m_XRToogleAttach_Menu = m_XRToogleAttach.FindAction("Menu", throwIfNotFound: true);
+        m_XRToogleAttach_Notebook = m_XRToogleAttach.FindAction("Notebook", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -3245,12 +3266,14 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
     private List<IXRToogleAttachActions> m_XRToogleAttachActionsCallbackInterfaces = new List<IXRToogleAttachActions>();
     private readonly InputAction m_XRToogleAttach_Deattach;
     private readonly InputAction m_XRToogleAttach_Menu;
+    private readonly InputAction m_XRToogleAttach_Notebook;
     public struct XRToogleAttachActions
     {
         private @XRIDefaultInputActions m_Wrapper;
         public XRToogleAttachActions(@XRIDefaultInputActions wrapper) { m_Wrapper = wrapper; }
         public InputAction @Deattach => m_Wrapper.m_XRToogleAttach_Deattach;
         public InputAction @Menu => m_Wrapper.m_XRToogleAttach_Menu;
+        public InputAction @Notebook => m_Wrapper.m_XRToogleAttach_Notebook;
         public InputActionMap Get() { return m_Wrapper.m_XRToogleAttach; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -3266,6 +3289,9 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
             @Menu.started += instance.OnMenu;
             @Menu.performed += instance.OnMenu;
             @Menu.canceled += instance.OnMenu;
+            @Notebook.started += instance.OnNotebook;
+            @Notebook.performed += instance.OnNotebook;
+            @Notebook.canceled += instance.OnNotebook;
         }
 
         private void UnregisterCallbacks(IXRToogleAttachActions instance)
@@ -3276,6 +3302,9 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
             @Menu.started -= instance.OnMenu;
             @Menu.performed -= instance.OnMenu;
             @Menu.canceled -= instance.OnMenu;
+            @Notebook.started -= instance.OnNotebook;
+            @Notebook.performed -= instance.OnNotebook;
+            @Notebook.canceled -= instance.OnNotebook;
         }
 
         public void RemoveCallbacks(IXRToogleAttachActions instance)
@@ -3417,5 +3446,6 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
     {
         void OnDeattach(InputAction.CallbackContext context);
         void OnMenu(InputAction.CallbackContext context);
+        void OnNotebook(InputAction.CallbackContext context);
     }
 }
