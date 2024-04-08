@@ -22,6 +22,18 @@ public class ElementCheck_Manager : MonoBehaviour
 
     public HintIdentifier hint;
 
+    public bool flourineCheck;
+    public bool chlorineCheck;
+
+    //To check
+    void achievementCheck()
+    {
+        if (flourineCheck == true && chlorineCheck == true)
+        {
+            medalScript.medal1Hidden = true;
+        }
+    }
+
 
 
     private void OnTriggerEnter(Collider other)
@@ -313,6 +325,9 @@ public class ElementCheck_Manager : MonoBehaviour
                 elementChecked[3] = true;
 
                 checkText.text = "F";
+
+                flourineCheck = true;
+                achievementCheck();
             }
             else
             {
@@ -340,6 +355,9 @@ public class ElementCheck_Manager : MonoBehaviour
                 Destroy(element);
 
                 checkText.text = "Cl";
+
+                chlorineCheck = true;
+                achievementCheck();
             }
             else
             {

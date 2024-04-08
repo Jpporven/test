@@ -34,6 +34,9 @@ public class Timer : MonoBehaviour
         openingTime = openingStartTime;
         StartCoroutine("lessTimer");
         //Menu.SetActive(false);
+
+        //Makes the achievment for speedrunning true.
+        medalScript.medal2Speed = true;
     }
 
     // Update is called once per frame
@@ -55,12 +58,16 @@ public class Timer : MonoBehaviour
         {
             time20check = true;
             subtitleTriggers.quickClearCheck = false;
+            
             if (level1Clear == true)
             {
                 subtitleTriggers.minLeft20Lv2Text();
             }
 
             subtitleTriggers.minLeft20Lv1Text();
+
+            //If you take more than 10minutes the achievment becomes false.
+            medalScript.medal2Speed = false;
         }
 
         if (time <= 600 && time10check == false)
@@ -72,6 +79,9 @@ public class Timer : MonoBehaviour
             }
 
             subtitleTriggers.minLeft10Lv1Text();
+
+            //If you take more than 10minutes the achievment becomes false.
+            medalScript.medal2Speed = false;
         }
 
         if (time <= 300 && time5check == false)
@@ -83,6 +93,9 @@ public class Timer : MonoBehaviour
             }
 
             subtitleTriggers.minLeft5Lv1Text();
+
+            //If you take more than 10minutes the achievment becomes false.
+            medalScript.medal2Speed = false;
         }
 
       

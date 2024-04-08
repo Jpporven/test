@@ -57,6 +57,7 @@ public class SubtitleTriggers : MonoBehaviour
         {
             checkboth = true;
             FindObjectOfType<SubtitleManager>().StartText(findBothHidden);
+            medalScript.medal1Hidden = true;
         }
     }
 
