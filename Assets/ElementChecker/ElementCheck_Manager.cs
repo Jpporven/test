@@ -21,10 +21,16 @@ public class ElementCheck_Manager : MonoBehaviour
     public bool[] elementChecked;
 
     public HintIdentifier hint;
+    public CheckingElement checkingElement; 
+    public UngreyElements ungreyElements;
 
     public bool flourineCheck;
     public bool chlorineCheck;
 
+    private void Update()
+    {
+        achievementCheck();
+    }
     //To check
     void achievementCheck()
     {
@@ -110,7 +116,8 @@ public class ElementCheck_Manager : MonoBehaviour
                 checkYES.SetActive(true);
 
                 Instantiate(FinalElements[4], transform.position, Quaternion.Euler(0, 0, 0));
-
+                checkingElement.particle[2].StopParticle();
+                ungreyElements.UngreyElement5();
                 Destroy(element);
 
                 elementChecked[4] = true;
@@ -140,7 +147,8 @@ public class ElementCheck_Manager : MonoBehaviour
                 Destroy(element);
 
                 elementChecked[10] = true;
-
+                checkingElement.particle[5].StopParticle();
+                ungreyElements.UngreyElement3();
                 checkText.text = "Na";
             }
             else
@@ -164,7 +172,8 @@ public class ElementCheck_Manager : MonoBehaviour
                 Instantiate(FinalElements[5], transform.position, Quaternion.Euler(0, 0, 0));
 
                 Destroy(element);
-
+                checkingElement.particle[2].StopParticle();
+                ungreyElements.UngreyElement5();
                 elementChecked[5] = true;
 
                 checkText.text = "Mg";
@@ -190,7 +199,8 @@ public class ElementCheck_Manager : MonoBehaviour
                 Instantiate(FinalElements[0], transform.position, Quaternion.Euler(0, 0, 0));
 
                 Destroy(element);
-
+                checkingElement.particle[0].StopParticle();
+                ungreyElements.UngreyElement1();
                 elementChecked[0] = true;
 
                 checkText.text = "Al";
@@ -216,7 +226,8 @@ public class ElementCheck_Manager : MonoBehaviour
                 Instantiate(FinalElements[9], transform.position, Quaternion.Euler(0, 0, 0));
 
                 Destroy(element);
-
+                checkingElement.particle[4].StopParticle();
+                ungreyElements.UngreyElement4();
                 elementChecked[9] = true;
 
                 checkText.text = "K";
@@ -244,7 +255,8 @@ public class ElementCheck_Manager : MonoBehaviour
                 Destroy(element);
 
                 elementChecked[1] = true;
-
+                checkingElement.particle[1].StopParticle();
+                ungreyElements.UngreyElement2();
                 checkText.text = "Ca";
             }
             else
@@ -270,7 +282,8 @@ public class ElementCheck_Manager : MonoBehaviour
                 Destroy(element);
 
                 elementChecked[6] = true;
-
+                
+                ungreyElements.UngreyElement7();
                 checkText.text = "N";
             }
             else
@@ -297,7 +310,7 @@ public class ElementCheck_Manager : MonoBehaviour
                 Destroy(element);
 
                 elementChecked[7] = true;
-
+                ungreyElements.UngreyElement8();
                 checkText.text = "O";
             }
             else
@@ -323,7 +336,7 @@ public class ElementCheck_Manager : MonoBehaviour
                 Destroy(element);
 
                 elementChecked[3] = true;
-
+                ungreyElements.UngreyElement12();
                 checkText.text = "F";
 
                 flourineCheck = true;
@@ -353,7 +366,7 @@ public class ElementCheck_Manager : MonoBehaviour
                 elementChecked[2] = true;
 
                 Destroy(element);
-
+                ungreyElements.UngreyElement11();
                 checkText.text = "Cl";
 
                 chlorineCheck = true;
@@ -383,7 +396,7 @@ public class ElementCheck_Manager : MonoBehaviour
                 Destroy(element);
 
                 elementChecked[11] = true;
-
+                ungreyElements.UngreyElement10();
                 checkText.text = "S";
             }
             else
@@ -408,7 +421,7 @@ public class ElementCheck_Manager : MonoBehaviour
                 Instantiate(FinalElements[8], transform.position, Quaternion.Euler(0, 0, 0));
 
                 Destroy(element);
-
+                ungreyElements.UngreyElement9();
                 elementChecked[8] = true;
 
                 checkText.text = "P";
