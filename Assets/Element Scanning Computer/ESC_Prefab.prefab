@@ -1226,8 +1226,12 @@ MonoBehaviour:
   checkNO: {fileID: 5542840919133347327}
   anim: {fileID: 929353801168436021}
   checkText: {fileID: 4197440567502986626}
-  checkElement: {fileID: 0}
   elementChecked: 000000000000000000000000
+  hint: {fileID: 0}
+  checkingElement: {fileID: 0}
+  ungreyElements: {fileID: 0}
+  flourineCheck: 0
+  chlorineCheck: 0
 --- !u!114 &4498217031297019916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1671,7 +1675,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1600353705176163014}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.17, z: -0.028}
+  m_LocalPosition: {x: 0, y: 0.186, z: -0.063}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

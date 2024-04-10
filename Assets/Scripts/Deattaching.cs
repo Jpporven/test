@@ -60,7 +60,7 @@ public class Deattaching : MonoBehaviour
         
         if(noteValue == 1)
         {
-            //notebookManager.OpenNoteBook();
+            notebookManager.OpenNoteBook();
         }
       
 
