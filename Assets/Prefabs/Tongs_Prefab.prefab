@@ -47,7 +47,7 @@ MonoBehaviour:
   rayCount: 9
   raySpreadAngle: 180
   raycastDistance: 0.12
-  targetTag: Negative
+  targetTag: Element
   resetTransform: {fileID: 1795619139929504559}
 --- !u!1 &4509417864196694900
 GameObject:
@@ -168,7 +168,7 @@ Transform:
   m_Children:
   - {fileID: 2516836516917346833}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!54 &1078998452877796172
 Rigidbody:
@@ -368,13 +368,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc812c2b9f69cb94ea80d24d6b974fcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AudioHover: {fileID: 566179490935405790, guid: 7993ae71b53b408449cea86d791c878e, type: 3}
-  m_AudioClick: {fileID: 566179490935405760, guid: 7993ae71b53b408449cea86d791c878e, type: 3}
+  m_AudioHover: {fileID: 566179490935405790, guid: 7993ae71b53b408449cea86d791c878e,
+    type: 3}
+  m_AudioClick: {fileID: 566179490935405760, guid: 7993ae71b53b408449cea86d791c878e,
+    type: 3}
   m_HighlightController:
     m_RendererCaptureDepth: 0
     m_ManuallySetRenderers: []
-  m_OutlineHighlight: {fileID: 566179490935405793, guid: 7993ae71b53b408449cea86d791c878e, type: 3}
-  m_MaterialHighlight: {fileID: 566179490935405792, guid: 7993ae71b53b408449cea86d791c878e, type: 3}
+  m_OutlineHighlight: {fileID: 566179490935405793, guid: 7993ae71b53b408449cea86d791c878e,
+    type: 3}
+  m_MaterialHighlight: {fileID: 566179490935405792, guid: 7993ae71b53b408449cea86d791c878e,
+    type: 3}
   m_HoverColor: {r: 0.25, g: 0.7, b: 0.9, a: 1}
   m_HoverPriorityColor: {r: 0.09411765, g: 0.4392157, b: 0.7137255, a: 1}
   m_SelectionColor: {r: 1, g: 1, b: 1, a: 1}

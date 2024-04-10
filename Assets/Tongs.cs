@@ -9,6 +9,7 @@ public class Tongs : MonoBehaviour
     public float raycastDistance = 10f; // Public variable to specify the distance of the raycast
     public string targetTag; // Public variable to specify the tag we're looking for
     public Transform resetTransform;
+    [SerializeField] private GameObject currentElement;
 
     void OnEnable()
     {
@@ -17,6 +18,16 @@ public class Tongs : MonoBehaviour
 
     void OnDisable()
     {
+        if(currentElement != null)
+        {
+            currentElement.transform.parent = null;
+
+            currentElement.GetComponent<Rigidbody>().isKinematic = false;
+
+            currentElement = null;
+        }
+        
+
         StopAllCoroutines();
     }
 
@@ -45,7 +56,7 @@ public class Tongs : MonoBehaviour
                     Debug.DrawRay(transform.position, rayDirection * raycastDistance, Color.green);
 
                     // Check if the object hit has the specified tag
-                    if (hit.collider.gameObject.CompareTag(targetTag.ToString()))
+                    if (hit.collider.gameObject.CompareTag(targetTag.ToString()) && currentElement == null)
                     {
                         // Get the Rigidbody component of the hit object
                         Rigidbody hitRigidbody = hit.collider.gameObject.GetComponent<Rigidbody>();
@@ -56,6 +67,8 @@ public class Tongs : MonoBehaviour
                             // Set the Rigidbody to kinematic
                             hitRigidbody.isKinematic = true;
                         }
+
+                        currentElement = hit.collider.gameObject;
 
                         // Set the hit object's parent to the script's GameObject
                         hit.collider.gameObject.transform.SetParent(transform);

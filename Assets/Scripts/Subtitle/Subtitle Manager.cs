@@ -6,12 +6,15 @@ using TMPro;
 
 public class SubtitleManager : MonoBehaviour
 {
+    public SoundManager sound;
+
     public TMP_Text sentenceText;
 
     public Queue<string> sentences;
 
     public float textTypeSpeed = 0.05f;
     public float sentencePause = 1f;
+    public int voiceoverCount;
 
     public void Start()
     {
@@ -20,7 +23,9 @@ public class SubtitleManager : MonoBehaviour
 
     public void StartText (Subtitles subtitle)
     {
-        sentences.Clear();  
+        sentences.Clear();
+
+        sound.PlaySound(voiceoverCount);
 
         foreach (string sentence in subtitle.sentences) 
         {
@@ -36,6 +41,9 @@ public class SubtitleManager : MonoBehaviour
             EndSubtitle();
             return;
         }
+
+        sound.PlaySound(voiceoverCount);
+        voiceoverCount += 1;
 
         string sentence = sentences.Dequeue();
         StopAllCoroutines();
