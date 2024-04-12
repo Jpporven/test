@@ -27,6 +27,10 @@ public class ElementCheck_Manager : MonoBehaviour
     public bool flourineCheck;
     public bool chlorineCheck;
 
+    private void Start()
+    {
+        medalScript.medal1Hidden = false;
+    }
     private void Update()
     {
         achievementCheck();
@@ -162,17 +166,17 @@ public class ElementCheck_Manager : MonoBehaviour
 
     public void MgButton()
     {
-        if (!elementChecked[5])
+        if (elementChecked[5] == false)
         {
             if (selectedElement == "Magnesium1")
             {
                 checkNO.SetActive(false);
                 checkYES.SetActive(true);
-
+                checkingElement.particle[2].StopParticle();
                 Instantiate(FinalElements[5], transform.position, Quaternion.Euler(0, 0, 0));
 
                 Destroy(element);
-                checkingElement.particle[2].StopParticle();
+                
                 ungreyElements.UngreyElement5();
                 elementChecked[5] = true;
 
@@ -216,7 +220,7 @@ public class ElementCheck_Manager : MonoBehaviour
 
     public void KButton()
     {
-        if (!elementChecked[9])
+        if (elementChecked[9] == false)
         {
             if (selectedElement == "Potassium1")
             {
@@ -411,18 +415,18 @@ public class ElementCheck_Manager : MonoBehaviour
 
     public void PButton()
     {
-        if (!elementChecked[8])
+        if (elementChecked[8] == false)
         {
             if (selectedElement == "Phosphorus1")
             {
                 checkNO.SetActive(false);
                 checkYES.SetActive(true);
-
+                elementChecked[8] = true;
                 Instantiate(FinalElements[8], transform.position, Quaternion.Euler(0, 0, 0));
 
                 Destroy(element);
                 ungreyElements.UngreyElement9();
-                elementChecked[8] = true;
+              
 
                 checkText.text = "P";
             }

@@ -20,4 +20,6 @@ public class GameOverMenu : MonoBehaviour
     {
         Application.Quit();
     }
+
+  
 }

@@ -136,6 +136,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PrefabParaJosh
       objectReference: {fileID: 0}
+    - target: {fileID: 1036279943581710328, guid: 587838d9d91269d40b1978ae29a0ca0f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 629
+      objectReference: {fileID: 0}
     - target: {fileID: 1759345525317586154, guid: 587838d9d91269d40b1978ae29a0ca0f,
         type: 3}
       propertyPath: m_RootOrder
@@ -191,8 +196,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7258840982431803059, guid: 587838d9d91269d40b1978ae29a0ca0f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2455d2d587a134045bcc00b45f805a7c,
+        type: 3}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4206395942002836797, guid: 587838d9d91269d40b1978ae29a0ca0f, type: 3}
+    - {fileID: 3031554996969828835, guid: 587838d9d91269d40b1978ae29a0ca0f, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 587838d9d91269d40b1978ae29a0ca0f, type: 3}

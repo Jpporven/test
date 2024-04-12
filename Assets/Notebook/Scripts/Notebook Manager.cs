@@ -16,9 +16,7 @@ public class NotebookManager : MonoBehaviour
     public TMP_Text description;
     public TMP_Text clue;
 
-    public TMP_Text AchievementTextPage2;
-    public TMP_Text achievementTitlePage2;
-
+   
     public TMP_Text AchievementTextPage3;
     public TMP_Text achievementTitlePage3;
 
@@ -160,19 +158,7 @@ public class NotebookManager : MonoBehaviour
         clue.text = "this element is a halogen which exists as a pale-yellow diatomic gas with atomic number 9";
     }
 
-    public void TutorialAchievement()
-    {
 
-        achievementTitlePage2.text = "Achievement : Tutorial";
-        achievementTitlePage2.text = "Complete the tutorial of the game following the steps of the guided element";
-
-    }
-
-    public void FirstLevelAchievement()
-    {
-        achievementTitlePage2.text = "Achievement : Getting Oxygen Back";
-        achievementTitlePage2.text = "Find the key and complete the first level";
-    }
 
     public void MissingElements()
     {

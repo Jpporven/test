@@ -16,14 +16,14 @@ public class Deattaching : MonoBehaviour
     public InputActionProperty notebook;
 
     public NotebookManager notebookManager;
-    XRSocketInteractor socket;
-    public GameObject  tong;
+    Tongs tongs;
+    public GameObject tong;
     public GameObject pauseMenu;
     public bool isPaused;
     public void Awake()
     {
         
-         socket = tong.GetComponent<XRSocketInteractor>();
+         tongs = tong.GetComponent<Tongs>();
        
         
     }
@@ -38,23 +38,14 @@ public class Deattaching : MonoBehaviour
         //print(pauseValue);
         if (buttonvalue != 0)
         {
-                socket.enabled = false;
+                tongs.enabled = false;
         }
         else
-             socket.enabled = true;
+             tongs.enabled = true;
 
 
         
-        if (pauseValue != 0)
-        {
-            isPaused = true;
-        }
-        if (isPaused == true)
-        {
-            
-           //pauseManager.ActivatePauseMenu();
-           pauseMenu.SetActive(true);
-        }
+       
         
             
         

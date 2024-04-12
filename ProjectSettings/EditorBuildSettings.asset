@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WinScene.unity
     guid: 594a15e1a9e0ca54cb7d26156375b357
+  - enabled: 1
+    path: Assets/Scenes/CreditScene.unity
+    guid: 6a9671499c539634d88c39924c10a65a
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 2238d457089b9494896515a25debf01c,
       type: 2}

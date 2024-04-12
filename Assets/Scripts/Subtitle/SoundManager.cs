@@ -16,7 +16,7 @@ public class SoundManager : MonoBehaviour
     {
         soundOutput = GetComponent<AudioSource>();
     }
-
+    
    /* void OnCollisionEnter(Collision other)
     {
         if(playOnCollision)

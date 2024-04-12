@@ -52,7 +52,7 @@ public class SubtitleTriggers : MonoBehaviour
     public Subtitles missdentified;
 
     //play voice over
-    public SoundManager sound;
+   // public SoundManager sound;
 
     void Update()
     {
@@ -68,7 +68,7 @@ public class SubtitleTriggers : MonoBehaviour
     {
         FindObjectOfType<SubtitleManager>().StartText(opening);
 
-        sound.PlaySound(0);
+       // sound.PlaySound(0);
     }
 
     public void EnterLevel1lText()
@@ -76,7 +76,7 @@ public class SubtitleTriggers : MonoBehaviour
         timer.enterLv1 = true;
         FindObjectOfType<SubtitleManager>().StartText(lv1Enter);
 
-        sound.PlaySound(1);
+       // sound.PlaySound(1);
     }
 
     public void Level1ClearText()
@@ -84,70 +84,70 @@ public class SubtitleTriggers : MonoBehaviour
         FindObjectOfType<SubtitleManager>().StartText(lv1Clear);
         timer.level1Clear = true;
 
-        sound.PlaySound(2);
+        //sound.PlaySound(2);
     }
 
     public void Level2ClearText()
     {
         FindObjectOfType<SubtitleManager>().StartText(lv2Clear);
 
-        sound.PlaySound(3);
+        //sound.PlaySound(3);
     }
 
     public void minLeft20Lv1Text()
     {
         FindObjectOfType<SubtitleManager>().StartText(minLeft20Lv1);
 
-        sound.PlaySound(4);
+        //sound.PlaySound(4);
     }
 
     public void minLeft10Lv1Text()
     {
         FindObjectOfType<SubtitleManager>().StartText(minLeft10Lv1);
 
-        sound.PlaySound(5);
+        //sound.PlaySound(5);
     }
 
     public void minLeft5Lv1Text()
     {
         FindObjectOfType<SubtitleManager>().StartText(minLeft5Lv1);
 
-        sound.PlaySound(6);
+       // sound.PlaySound(6);
     }
 
     public void minLeft0Lv1Text()
     {
         FindObjectOfType<SubtitleManager>().StartText(minLeft0Lv1);
 
-        sound.PlaySound(7);
+        //sound.PlaySound(7);
     }
 
     public void minLeft20Lv2Text()
     {
         FindObjectOfType<SubtitleManager>().StartText(minLeft20Lv2);
 
-        sound.PlaySound(8);
+        //sound.PlaySound(8);
     }
 
     public void minLeft10Lv2Text()
     {
         FindObjectOfType<SubtitleManager>().StartText(minLeft10Lv2);
 
-        sound.PlaySound(9);
+       // sound.PlaySound(9);
     }
 
     public void minLeft5Lv2Text()
     {
         FindObjectOfType<SubtitleManager>().StartText(minLeft5Lv2);
 
-        sound.PlaySound(10);
+        //sound.PlaySound(10);
     }
 
     public void minLeft0Lv2Text()
     {
         FindObjectOfType<SubtitleManager>().StartText(minLeft0Lv1);
 
-        sound.PlaySound(11);
+       // sound.PlaySound(11);
     }
 
 

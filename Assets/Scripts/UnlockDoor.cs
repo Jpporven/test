@@ -5,6 +5,7 @@ using UnityEngine;
 public class UnlockDoor : MonoBehaviour
 {
     public GameObject Door;
+    public GameObject keyCollision;
     Rigidbody Rigidbody;
    
     // Start is called before the first frame update
@@ -22,16 +23,9 @@ public class UnlockDoor : MonoBehaviour
     {
         //if (gameObject.tag == "Key")
         //{
-            Rigidbody.isKinematic = false;
+        Rigidbody.isKinematic = false;
+        keyCollision.GetComponent<BoxCollider>().enabled = false;   
         //}
     }
-    public void OnTriggerEnter(Collider other)
-    {
-       if(other.gameObject.tag == "Key")
-        {
-            Rigidbody.isKinematic = false;  
-        }
-       
-       
-    }
+    
 }

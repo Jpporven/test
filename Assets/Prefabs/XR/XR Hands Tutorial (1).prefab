@@ -2336,7 +2336,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dacfd6683b30bfe46b17452f135018b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 0}
   sentenceText: {fileID: 5337135856802135536}
   textTypeSpeed: 0.05
   sentencePause: 1
@@ -2519,7 +2518,6 @@ MonoBehaviour:
   missdentified:
     sentences:
     - No hints for my little secrets, sorry!
-  sound: {fileID: 0}
 --- !u!114 &8799053070773145750
 MonoBehaviour:
   m_ObjectHideFlags: 0

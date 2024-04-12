@@ -20,6 +20,7 @@ TagManager:
   - Level2Manager
   - Electron
   - goodElectron
+  - hint
   layers:
   - Default
   - TransparentFX
@@ -27,7 +28,7 @@ TagManager:
   - Objects
   - Water
   - UI
-  - 
+  - Doors
   - 
   - 
   - 

@@ -11,12 +11,12 @@ public class GameStartMenu : MonoBehaviour
     public GameObject gameTitle;
     public GameObject mainMenu;
     public GameObject options;
-    public GameObject about;
+    public GameObject credits;
 
     [Header("Main Menu Buttons")]
     public Button startButton;
     public Button optionButton;
-    public Button aboutButton;
+    public Button creditsButton;
     public Button quitButton;
 
     public List<Button> returnButtons;
@@ -34,7 +34,7 @@ public class GameStartMenu : MonoBehaviour
        
         startButton.onClick.AddListener(StartGame);
         optionButton.onClick.AddListener(EnableOption);
-        aboutButton.onClick.AddListener(EnableAbout);
+        creditsButton.onClick.AddListener(EnableCredits);
         quitButton.onClick.AddListener(QuitGame);
 
         foreach (var item in returnButtons)
@@ -62,7 +62,7 @@ public class GameStartMenu : MonoBehaviour
     {
         mainMenu.SetActive(false);
         options.SetActive(false);
-        about.SetActive(false);
+        credits.SetActive(false);
     }
 
     public void EnableMainMenu()
@@ -70,22 +70,19 @@ public class GameStartMenu : MonoBehaviour
         gameTitle.SetActive(false);
         mainMenu.SetActive(true);
         options.SetActive(false);
-        about.SetActive(false);
+        credits.SetActive(true);
     }
     public void EnableOption()
     {
         print("Settings Enabled");
         mainMenu.SetActive(false);
         options.SetActive(true);
-        about.SetActive(false);
+        credits.SetActive(false);
     }
-    public void EnableAbout()
+    public void EnableCredits()
     {
-        gameTitle.SetActive(false);
-        mainMenu.SetActive(false);
-        options.SetActive(false);
-        about.SetActive(true);
-        
+        SceneManager.LoadScene(4);
+
     }
 
    

@@ -6210,7 +6210,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_AttachTransform: {fileID: 1785840121522758728}
+  m_AttachTransform: {fileID: 0}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -6218,7 +6218,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 1
+  m_MovementType: 2
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -6269,7 +6269,7 @@ BoxCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1073741824
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -8626,37 +8626,6 @@ Transform:
   - {fileID: 4161547305079043964}
   m_Father: {fileID: 1168762579810349062}
   m_RootOrder: -2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &884237220104745417
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7620024624131729855}
-  m_Layer: 3
-  m_Name: PotassiumPivot
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7620024624131729855
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 884237220104745417}
-  m_LocalRotation: {x: -0, y: -0.5784946, z: -0, w: 0.8156863}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.10000002, y: 0.1, z: 0.10000001}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1902357567551660048}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &889915992017913343
 GameObject:
@@ -12931,7 +12900,7 @@ BoxCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1073741824
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -13080,7 +13049,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_AttachTransform: {fileID: 6627754674284228865}
+  m_AttachTransform: {fileID: 0}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -13088,7 +13057,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 1
+  m_MovementType: 2
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -35399,37 +35368,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &2476146326323612982
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1785840121522758728}
-  m_Layer: 3
-  m_Name: SodiumPivot
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1785840121522758728
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2476146326323612982}
-  m_LocalRotation: {x: -0, y: 0.0903126, z: -0, w: 0.9959135}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.099999994, y: 0.1, z: 0.099999994}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1902357567551660048}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2480016997813003375
 GameObject:
   m_ObjectHideFlags: 0
@@ -36428,37 +36366,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 513074060903442669}
   m_RootOrder: -2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2566472629162386131
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8562127529920117836}
-  m_Layer: 3
-  m_Name: MagnesiumPivot
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8562127529920117836
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2566472629162386131}
-  m_LocalRotation: {x: -0, y: -0.37966594, z: -0, w: 0.92512363}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.10000004, y: 0.10000001, z: 0.1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1902357567551660048}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2572143102291800635
 GameObject:
@@ -41633,7 +41540,7 @@ Transform:
   - {fileID: 7884150320564837870}
   - {fileID: 3466952226064573135}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3070217535410614929
 GameObject:
@@ -46430,37 +46337,6 @@ Transform:
   - {fileID: 7902662705147323309}
   m_Father: {fileID: 5583332069948947768}
   m_RootOrder: -2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &3495155648078716591
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1097761172756828496}
-  m_Layer: 3
-  m_Name: CalciumPivot
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1097761172756828496
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3495155648078716591}
-  m_LocalRotation: {x: -0, y: 0.12394005, z: -0, w: 0.9922898}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.06666666, y: 0.06666667, z: 0.066666655}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1902357567551660048}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3496005752678863777
 GameObject:
@@ -57197,7 +57073,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_AttachTransform: {fileID: 8562127529920117836}
+  m_AttachTransform: {fileID: 0}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -57256,7 +57132,7 @@ BoxCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1073741824
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -59046,7 +58922,7 @@ BoxCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1073741824
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -59183,7 +59059,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_AttachTransform: {fileID: 1999612404239960763}
+  m_AttachTransform: {fileID: 0}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -59191,7 +59067,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 1
+  m_MovementType: 2
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -59514,37 +59390,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &4625533748394166187
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6627754674284228865}
-  m_Layer: 3
-  m_Name: LithiumPivot
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6627754674284228865
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4625533748394166187}
-  m_LocalRotation: {x: -0, y: 0.4851912, z: -0, w: 0.8744081}
-  m_LocalPosition: {x: -1.0069997, y: 0.024000011, z: -0.009}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1902357567551660048}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4635242057374866538
 GameObject:
   m_ObjectHideFlags: 0
@@ -68407,7 +68252,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_AttachTransform: {fileID: 1097761172756828496}
+  m_AttachTransform: {fileID: 0}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -68415,7 +68260,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 1
+  m_MovementType: 2
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -68466,7 +68311,7 @@ BoxCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1073741824
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -79743,7 +79588,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_AttachTransform: {fileID: 7620024624131729855}
+  m_AttachTransform: {fileID: 0}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -79751,7 +79596,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 1
+  m_MovementType: 2
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -79802,7 +79647,7 @@ BoxCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1073741824
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -87946,12 +87791,6 @@ Transform:
   - {fileID: 3072825176253787745}
   - {fileID: 7644742078481840156}
   - {fileID: 8945379659565193625}
-  - {fileID: 1999612404239960763}
-  - {fileID: 6627754674284228865}
-  - {fileID: 1097761172756828496}
-  - {fileID: 7620024624131729855}
-  - {fileID: 8562127529920117836}
-  - {fileID: 1785840121522758728}
   - {fileID: 2926371238419376864}
   m_Father: {fileID: 5144831498050056758}
   m_RootOrder: -1
@@ -91342,37 +91181,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &7152165790888518201
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1999612404239960763}
-  m_Layer: 3
-  m_Name: AluminumPivot
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1999612404239960763
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7152165790888518201}
-  m_LocalRotation: {x: -0, y: -0.2958747, z: -0, w: 0.9552268}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.099999994}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1902357567551660048}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7156516455504280011
 GameObject:
   m_ObjectHideFlags: 0
@@ -115680,7 +115488,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3269486107292579573}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Attach
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128218,7 +128026,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ControllingInteractor
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9033834507779287038}
     - target: {fileID: 4447711890735625854, guid: 6f9046ea606af44bbb0fe592f41f4126,
         type: 3}
       propertyPath: nob
@@ -131143,6 +130951,11 @@ PrefabInstance:
       propertyPath: particle.Array.data[5]
       value: 
       objectReference: {fileID: 631709170606986650}
+    - target: {fileID: 2341747210993068032, guid: 6f9046ea606af44bbb0fe592f41f4126,
+        type: 3}
+      propertyPath: m_Name
+      value: GlassAttachFumeHood
+      objectReference: {fileID: 0}
     - target: {fileID: 2922095127943775140, guid: 6f9046ea606af44bbb0fe592f41f4126,
         type: 3}
       propertyPath: m_Name
@@ -131287,6 +131100,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3266822058882822054}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &9033834507779287038 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5767059183644395608, guid: 6f9046ea606af44bbb0fe592f41f4126,
+    type: 3}
+  m_PrefabInstance: {fileID: 3266822058882822054}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60523e0647cc6ab43acc73cb266a32a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3481482663453306656
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -135217,6 +135042,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Raycast
       objectReference: {fileID: 0}
+    - target: {fileID: 330636337866169159, guid: e919534a33cea40f6b27e3871c7ea434,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 726089216182215011, guid: e919534a33cea40f6b27e3871c7ea434,
         type: 3}
       propertyPath: m_Materials.Array.data[1]
@@ -135232,10 +135062,20 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.033
       objectReference: {fileID: 0}
+    - target: {fileID: 4509417864196694900, guid: e919534a33cea40f6b27e3871c7ea434,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4743465577130398192, guid: e919534a33cea40f6b27e3871c7ea434,
         type: 3}
       propertyPath: m_Name
       value: Tongs_Prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743465577130398192, guid: e919534a33cea40f6b27e3871c7ea434,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4743465577130398192, guid: e919534a33cea40f6b27e3871c7ea434,
         type: 3}
@@ -135341,6 +135181,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Center.z
       value: 0.030007353
+      objectReference: {fileID: 0}
+    - target: {fileID: 8422037426798422398, guid: e919534a33cea40f6b27e3871c7ea434,
+        type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 64
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

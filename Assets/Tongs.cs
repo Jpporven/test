@@ -10,6 +10,8 @@ public class Tongs : MonoBehaviour
     public string targetTag; // Public variable to specify the tag we're looking for
     public Transform resetTransform;
     [SerializeField] private GameObject currentElement;
+    public bool increasedIndicator = false;
+    public int indicatorNum;
 
     void OnEnable()
     {
@@ -31,6 +33,15 @@ public class Tongs : MonoBehaviour
         StopAllCoroutines();
     }
 
+
+    private void Update()
+    {
+        if(currentElement != null && increasedIndicator == false)
+        {
+            IndicatorManager.GenerateNextIndicator(IndicatorManager.currentIndicator++);
+            increasedIndicator = true;
+        }
+    }
 
     IEnumerator ShootElementRays(bool loop)
     {

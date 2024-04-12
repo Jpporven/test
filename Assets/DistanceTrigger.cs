@@ -8,10 +8,12 @@ public class DistanceTrigger : MonoBehaviour
 
     public GameObject Player;
 
+    public float range;
+
     public void Update()
     {
 
-        if (Vector3.Distance(Player.transform.position, transform.position) < 1.8f && !inRange)
+        if (Vector3.Distance(Player.transform.position, transform.position) < range && !inRange)
         {
             InRange();
         }

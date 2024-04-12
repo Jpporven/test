@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1795619139929504559}
   - component: {fileID: 5822104453917329263}
-  m_Layer: 0
-  m_Name: Attach
+  m_Layer: 3
+  m_Name: Raycast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39,7 +39,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330636337866169159}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 331b537109bc8430cbb92f45a3fcd391, type: 3}
   m_Name: 
@@ -48,7 +48,39 @@ MonoBehaviour:
   raySpreadAngle: 180
   raycastDistance: 0.12
   targetTag: Element
-  resetTransform: {fileID: 1795619139929504559}
+  resetTransform: {fileID: 2904923548560155750}
+  currentElement: {fileID: 0}
+--- !u!1 &2368585432408963012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2904923548560155750}
+  m_Layer: 3
+  m_Name: Attach
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2904923548560155750
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2368585432408963012}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.0083, y: -0.0282, z: 0.0676}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2516836516917346833}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4509417864196694900
 GameObject:
   m_ObjectHideFlags: 0
@@ -60,7 +92,7 @@ GameObject:
   - component: {fileID: 2516836516917346833}
   - component: {fileID: 834905403745925437}
   - component: {fileID: 726089216182215011}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tongs_Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,11 +107,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4509417864196694900}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.043075457}
+  m_LocalPosition: {x: 0.01, y: 0, z: 0.033}
   m_LocalScale: {x: 1, y: 0.9886138, z: 1.0109382}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1795619139929504559}
+  - {fileID: 2904923548560155750}
   m_Father: {fileID: 5076781949465579098}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -112,7 +145,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 5561349426305759274, guid: 44f3430c585c6514985b591c28e05a78, type: 3}
-  - {fileID: 2100000, guid: 9105cf4bbc4fb31479e2afe3138479a0, type: 2}
+  - {fileID: 2100000, guid: 7d9c35ca02fc64c7185bceaac8ddb7d6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -147,9 +180,9 @@ GameObject:
   - component: {fileID: 8382209334900027891}
   - component: {fileID: 7551034713937348043}
   - component: {fileID: 8422037426798422398}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tongs_Prefab
-  m_TagString: Untagged
+  m_TagString: Tongs
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -161,15 +194,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4743465577130398192}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.436661, y: 0.8571198, z: 14.510206}
-  m_LocalScale: {x: 2.58264, y: 2.8194098, z: 2.9349499}
+  m_LocalScale: {x: 20, y: 20, z: 20}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2516836516917346833}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1078998452877796172
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -401,11 +434,11 @@ BoxCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.029999997, y: 0.004, z: 0.095922545}
-  m_Center: {x: 0, y: 0, z: 0.03196128}
+  m_Size: {x: 0.033827018, y: 0.004, z: 0.10098167}
+  m_Center: {x: 0.011938498, y: 0, z: 0.030007353}

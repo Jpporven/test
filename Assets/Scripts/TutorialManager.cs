@@ -54,6 +54,7 @@ public class TutorialManager : MonoBehaviour
     public TutorialRaycast ray;
     public MovementDetection movement;
     public VideoPlayer VideoPlayer;
+    public Tongs tongsReference;
    
         
 
@@ -113,7 +114,7 @@ public class TutorialManager : MonoBehaviour
         if (stepCount == 3)
         {
             button.SetActive(true);
-            tutorialText.text = " Press the button with your hand";
+            tutorialText.text = " Press the button using the right or left trigger";
             IndicatorManager.GenerateNextIndicator(0);
             yield return new WaitUntil(() => stepCount != 3);
         }
@@ -124,8 +125,9 @@ public class TutorialManager : MonoBehaviour
         if (stepCount == 5)
         {
             yield return new WaitForSeconds(1f);
-            tutorialText.text = "Grab the metal with the tongs in your hands";
-            yield return new WaitUntil(() => stepCount != 5);
+            tutorialText.text = " Use the tongs to approach to the metal";
+            stepCount++;
+            yield return new WaitUntil(() => tongsReference.increasedIndicator == true );
         }
         if (stepCount == 6)
         {
@@ -147,8 +149,8 @@ public class TutorialManager : MonoBehaviour
         }
         if (stepCount == 8)
         {
-            tutorialText.text = "Congratulations , you have completed the Tutorial" + "Press the Tutorial button in the main if you want to repeat the tutorial " +
-               "good luck! ";
+            tutorialText.text = "Congratulations , you have completed the Tutorial " + "You are almost ready to play the game" + "good luck! ";
+
             yield return new WaitForSeconds(5);
             stepCount++;
             yield return new WaitUntil(() => stepCount != 8);
@@ -183,7 +185,7 @@ public class TutorialManager : MonoBehaviour
             bunsenBurner.SetActive(true);
             Dial.SetActive(true);
             hasBeenPressed = true;
-            tutorialText.text = "Grab the tongs of the table with your right grip button";
+            tutorialText.text = "Grab the tongs off the table with your right grip button";
             IndicatorManager.GenerateNextIndicator(1);
             
            
