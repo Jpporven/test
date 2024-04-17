@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7660869480812986448}
   - component: {fileID: 6950766603056709769}
   - component: {fileID: 1353244385238917764}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Magnesium
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -294,7 +294,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3627380437598026842}
   - component: {fileID: 4786902617134716051}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ElementSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

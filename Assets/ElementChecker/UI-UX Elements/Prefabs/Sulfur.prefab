@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2783495237434956819}
   - component: {fileID: 237470158210460187}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ElementSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 7729589046452235664}
   - component: {fileID: 1049746978521185903}
   - component: {fileID: 1705564107403261748}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sulfur
   m_TagString: Untagged
   m_Icon: {fileID: 0}

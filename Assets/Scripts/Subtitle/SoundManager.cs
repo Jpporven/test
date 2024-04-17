@@ -11,13 +11,14 @@ public class SoundManager : MonoBehaviour
     [SerializeField] private bool playOnCollision;
     [SerializeField] private string sfxType;
     private AudioSource soundOutput;
+    public bool oneTimePlay;
 
     void Awake()
     {
         soundOutput = GetComponent<AudioSource>();
     }
     
-   /* void OnCollisionEnter(Collision other)
+    void OnCollisionEnter(Collision other)
     {
         if(playOnCollision)
         {
@@ -36,12 +37,17 @@ public class SoundManager : MonoBehaviour
             }
         }
     }
-   */
+
     
     public void PlaySound(int soundNumber)
     {
         soundOutput.clip = sounds[soundNumber];
         soundOutput.Play();
+
+        if(oneTimePlay)
+        {
+            this.enabled = false;
+        }
 
         Debug.Log("We are playing the voice over");
     }

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4230822179039730944}
   - component: {fileID: 5635578127732927857}
   - component: {fileID: 4272203400093030856}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Lithium
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -294,7 +294,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3840311667535190016}
   - component: {fileID: 1951673772354622999}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Lithium_Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

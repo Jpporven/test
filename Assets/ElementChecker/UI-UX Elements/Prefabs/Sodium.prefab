@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7181848597393637943}
   - component: {fileID: 3505143768491888362}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ElementSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 5578830344794025057}
   - component: {fileID: 3553558799248032165}
   - component: {fileID: 7138470217570943418}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sodium
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -6,7 +6,7 @@ using TMPro;
 
 public class SubtitleManager : MonoBehaviour
 {
-    //public SoundManager sound;
+    public SoundManager sound;
 
     public TMP_Text sentenceText;
 
@@ -25,7 +25,7 @@ public class SubtitleManager : MonoBehaviour
     {
         sentences.Clear();
 
-       // sound.PlaySound(voiceoverCount);
+        sound.PlaySound(voiceoverCount);
 
         foreach (string sentence in subtitle.sentences) 
         {
@@ -42,7 +42,7 @@ public class SubtitleManager : MonoBehaviour
             return;
         }
 
-       // sound.PlaySound(voiceoverCount);
+        sound.PlaySound(voiceoverCount);
         voiceoverCount += 1;
 
         string sentence = sentences.Dequeue();

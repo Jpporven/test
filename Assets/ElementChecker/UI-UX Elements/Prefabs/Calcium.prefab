@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1777745467219636372}
   - component: {fileID: 7728846081314512363}
   - component: {fileID: 8031165108395867865}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Calcium
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -294,7 +294,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7259502546791345968}
   - component: {fileID: 8652942664834658191}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ElementSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

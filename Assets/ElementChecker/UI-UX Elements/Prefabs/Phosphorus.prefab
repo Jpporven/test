@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8046904910815123537}
   - component: {fileID: 8740168096153806753}
   - component: {fileID: 4873562340544954508}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Phosphorus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -294,7 +294,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6743435296330715398}
   - component: {fileID: 4277035597645221481}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ElementSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5396325727886482147}
   - component: {fileID: 3754325043103336358}
   - component: {fileID: 8767786412112509752}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Aluminum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -294,7 +294,7 @@ GameObject:
   m_Component:
   - component: {fileID: 900343659495995998}
   - component: {fileID: 1517199000250055751}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Aluminum_Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

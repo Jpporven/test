@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5233501408282337324}
   - component: {fileID: 466759111638174690}
   - component: {fileID: 548816849028322020}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Flourine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -294,7 +294,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2694731815012847691}
   - component: {fileID: 4195089021017324582}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ElementSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6537720551455767423}
   - component: {fileID: 5071486544419514062}
   - component: {fileID: 3428870692655640820}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Potassium
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -294,7 +294,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7852866271079364874}
   - component: {fileID: 6248848376404739455}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ElementSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

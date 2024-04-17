@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5001108220364816209}
   - component: {fileID: 8523188930168298894}
   - component: {fileID: 7837528047173542512}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Nitrogen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -294,7 +294,7 @@ GameObject:
   m_Component:
   - component: {fileID: 946531664009642717}
   - component: {fileID: 4724347345932451002}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ElementSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

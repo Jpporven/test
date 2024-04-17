@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7346486104454575630}
   - component: {fileID: 2266375438174009361}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ElementSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 2580262714013519158}
   - component: {fileID: 7293467074435774035}
   - component: {fileID: 2153855928122912212}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Oxygen
   m_TagString: Untagged
   m_Icon: {fileID: 0}

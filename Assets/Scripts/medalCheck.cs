@@ -9,6 +9,8 @@ public class medalCheck : MonoBehaviour
     public Image medalImage1Hidden;
     public Image medalImage2Speed;
 
+    public SoundManager sound;
+
     private void Update()
     {
         //Checks for the first achievement (Hidden elements)
@@ -29,6 +31,15 @@ public class medalCheck : MonoBehaviour
         else if (medalScript.medal2Speed == true)
         {
             medalImage2Speed.enabled = true;
+        }
+
+        if(medalScript.medal2Speed == true && medalScript.medal2Speed == false)
+        {
+            sound.PlaySound(0);
+        }
+        else
+        {
+            sound.PlaySound(1);
         }
     }
 

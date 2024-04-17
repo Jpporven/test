@@ -329,6 +329,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a91e9cac29a9df7469263693e077709b, type: 3}
   playOnCollision: 0
   sfxType: 
+  oneTimePlay: 0
 --- !u!114 &4352541942024738344 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5364389888242621003, guid: 7415f28ae303170438edca1a74f04c2a,
