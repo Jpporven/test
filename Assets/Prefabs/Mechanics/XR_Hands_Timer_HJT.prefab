@@ -30,6 +30,36 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 20744680556317098, guid: f41bb13e590c4d749b7e9478bfd8c13c,
         type: 2}
+    - target: {fileID: 3509324452626976790, guid: 7415f28ae303170438edca1a74f04c2a,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 32.151405
+      objectReference: {fileID: 0}
+    - target: {fileID: 3509324452626976790, guid: 7415f28ae303170438edca1a74f04c2a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.001816
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550418155566086782, guid: 7415f28ae303170438edca1a74f04c2a,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 43.594006
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550418155566086782, guid: 7415f28ae303170438edca1a74f04c2a,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 11.992836
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550418155566086782, guid: 7415f28ae303170438edca1a74f04c2a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.005777
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550418155566086782, guid: 7415f28ae303170438edca1a74f04c2a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.00594
+      objectReference: {fileID: 0}
     - target: {fileID: 5040863361236070622, guid: 7415f28ae303170438edca1a74f04c2a,
         type: 3}
       propertyPath: m_Camera
@@ -174,6 +204,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5897443414702623317, guid: 7415f28ae303170438edca1a74f04c2a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TabPage1
       objectReference: {fileID: 0}
     - target: {fileID: 6069321248251831837, guid: 7415f28ae303170438edca1a74f04c2a,
         type: 3}
