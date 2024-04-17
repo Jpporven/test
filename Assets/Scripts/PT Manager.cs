@@ -10,6 +10,7 @@ public class PTManager : MonoBehaviour
 
     //Key and renderer of the key object.
     public GameObject key;
+    public GameObject keyIndicator;
     public GameObject keyLooks;
     Renderer keyRend;
 
@@ -50,6 +51,7 @@ public class PTManager : MonoBehaviour
     {
         //Deactivate key and get the renderer.
         key.SetActive(false);
+        keyIndicator.SetActive(false);
         keyRend = keyLooks.GetComponent<Renderer>();
 
         //Deactivate the panels.
@@ -213,6 +215,7 @@ public class PTManager : MonoBehaviour
         if (elementCount == winCondition) //Win Condition.
         {
             key.SetActive(true);
+            keyIndicator.SetActive(true);
             keyRend.material.color = Color.yellow;
 
             IndicatorManager.GenerateNextIndicator(IndicatorManager.currentIndicator++);

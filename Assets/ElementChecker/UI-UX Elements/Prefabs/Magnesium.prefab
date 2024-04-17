@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 1353244385238917764}
   m_Layer: 3
   m_Name: Magnesium
-  m_TagString: Untagged
+  m_TagString: Square
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

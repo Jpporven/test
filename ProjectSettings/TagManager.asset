@@ -21,6 +21,8 @@ TagManager:
   - Electron
   - goodElectron
   - hint
+  - objective
+  - Square
   layers:
   - Default
   - TransparentFX
