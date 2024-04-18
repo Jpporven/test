@@ -8,6 +8,9 @@ public class SubtitleManager : MonoBehaviour
 {
     public SoundManager sound;
 
+    public Rigidbody door;
+    public GameObject waitForDoorSign;
+
     public TMP_Text sentenceText;
 
     public Queue<string> sentences;
@@ -63,6 +66,11 @@ public class SubtitleManager : MonoBehaviour
         }
         yield return new WaitForSeconds(sentencePause);
         print("Sentence End");
+        if(voiceoverCount > 9)
+        {
+            door.isKinematic = false;
+            waitForDoorSign.SetActive(false);
+        }
         NextSentence();
 
 

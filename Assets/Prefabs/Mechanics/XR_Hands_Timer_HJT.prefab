@@ -8,6 +8,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 367803956518259440, guid: 7415f28ae303170438edca1a74f04c2a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 427
+      objectReference: {fileID: 0}
+    - target: {fileID: 367803956518259440, guid: 7415f28ae303170438edca1a74f04c2a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -56
+      objectReference: {fileID: 0}
     - target: {fileID: 1837560827312601414, guid: 7415f28ae303170438edca1a74f04c2a,
         type: 3}
       propertyPath: m_fontSize
@@ -30,6 +40,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 20744680556317098, guid: f41bb13e590c4d749b7e9478bfd8c13c,
         type: 2}
+    - target: {fileID: 2690567834438766062, guid: 7415f28ae303170438edca1a74f04c2a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 424.7002
+      objectReference: {fileID: 0}
+    - target: {fileID: 2690567834438766062, guid: 7415f28ae303170438edca1a74f04c2a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -59.400032
+      objectReference: {fileID: 0}
     - target: {fileID: 3509324452626976790, guid: 7415f28ae303170438edca1a74f04c2a,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -135,6 +155,11 @@ PrefabInstance:
       propertyPath: m_LeftHandSnapTurnAction.m_UseReference
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5220121720154975698, guid: 7415f28ae303170438edca1a74f04c2a,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5325049942727137272, guid: 7415f28ae303170438edca1a74f04c2a,
         type: 3}
       propertyPath: m_Height
@@ -217,6 +242,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6693567679939010815, guid: 7415f28ae303170438edca1a74f04c2a,
         type: 3}
+      propertyPath: subs
+      value: 
+      objectReference: {fileID: 1650671815708926076}
+    - target: {fileID: 6693567679939010815, guid: 7415f28ae303170438edca1a74f04c2a,
+        type: 3}
+      propertyPath: sound
+      value: 
+      objectReference: {fileID: 3158625751451988478}
+    - target: {fileID: 6693567679939010815, guid: 7415f28ae303170438edca1a74f04c2a,
+        type: 3}
       propertyPath: opening.sentences.Array.size
       value: 10
       objectReference: {fileID: 0}
@@ -279,7 +314,7 @@ PrefabInstance:
     - target: {fileID: 6988791394679516191, guid: 7415f28ae303170438edca1a74f04c2a,
         type: 3}
       propertyPath: sentencePause
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7383087807058913211, guid: 7415f28ae303170438edca1a74f04c2a,
         type: 3}
@@ -345,6 +380,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1650671815708926076 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6988791394679516191, guid: 7415f28ae303170438edca1a74f04c2a,
+    type: 3}
+  m_PrefabInstance: {fileID: 8508832396407835747}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dacfd6683b30bfe46b17452f135018b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &2632562734753552531 stripped
@@ -467,7 +514,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 0
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -584,6 +631,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: cbbd74c49c3f0264a9a89f1e8027cfc4, type: 3}
   - {fileID: 8300000, guid: 400f16c1dde4f8249ac9f31c95a69dc4, type: 3}
   - {fileID: 8300000, guid: 2f1ead222f3d39f4c9c76d42553d190c, type: 3}
+  - {fileID: 8300000, guid: ea7c79fe80a4f51429323ba3fd6a4ae2, type: 3}
+  - {fileID: 8300000, guid: 97cdb4de45c523e41afec51bdd5ed058, type: 3}
+  - {fileID: 8300000, guid: c3351d409d2e07f4896ba05f108d9833, type: 3}
+  - {fileID: 8300000, guid: d17097963e2a8324d8adebdedc1b4850, type: 3}
   playOnCollision: 0
   sfxType: 
   oneTimePlay: 0

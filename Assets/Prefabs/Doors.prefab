@@ -527,6 +527,11 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 7046680800655827340, guid: ef8968d3811b4f9448c64ac756317715,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7785893644954467669, guid: ef8968d3811b4f9448c64ac756317715,
         type: 3}
       propertyPath: m_IsActive

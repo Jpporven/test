@@ -108,27 +108,27 @@ public class SubtitleTriggers : MonoBehaviour
 
     public void minLeft10Lv1Text()
     {
-        FindObjectOfType<SubtitleManager>().StartText(minLeft10Lv1);
+        //FindObjectOfType<SubtitleManager>().StartText(minLeft10Lv1);
 
-        //sound.PlaySound(5);
+        sound.PlaySound(27);
     }
 
     public void minLeft5Lv1Text()
     {
-        FindObjectOfType<SubtitleManager>().StartText(minLeft5Lv1);
+        //FindObjectOfType<SubtitleManager>().StartText(minLeft5Lv1);
 
         //subs.voiceoverCount = 28;
         //sound.PlaySound(subs.voiceoverCount);
-        // sound.PlaySound(6);
+        sound.PlaySound(28);
     }
 
     public void minLeft0Lv1Text()
     {
-        FindObjectOfType<SubtitleManager>().StartText(minLeft0Lv1);
+        //FindObjectOfType<SubtitleManager>().StartText(minLeft0Lv1);
 
         //subs.voiceoverCount = 29;
         //sound.PlaySound(subs.voiceoverCount);
-        //sound.PlaySound(7);
+        sound.PlaySound(29);
     }
 
     public void minLeft20Lv2Text()
@@ -143,7 +143,7 @@ public class SubtitleTriggers : MonoBehaviour
 
         //subs.voiceoverCount = 27;
         //sound.PlaySound(subs.voiceoverCount);
-        // sound.PlaySound(9);
+        sound.PlaySound(27);
     }
 
     public void minLeft5Lv2Text()
@@ -152,7 +152,7 @@ public class SubtitleTriggers : MonoBehaviour
 
         //subs.voiceoverCount = 28;
         //sound.PlaySound(subs.voiceoverCount);
-        //sound.PlaySound(10);
+        sound.PlaySound(28);
     }
 
     public void minLeft0Lv2Text()
@@ -161,7 +161,7 @@ public class SubtitleTriggers : MonoBehaviour
 
         //subs.voiceoverCount = 29;
         //sound.PlaySound(subs.voiceoverCount);
-        // sound.PlaySound(11);
+        sound.PlaySound(29);
     }
 
 
