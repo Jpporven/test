@@ -52,7 +52,10 @@ public class SubtitleTriggers : MonoBehaviour
     public Subtitles missdentified;
 
     //play voice over
-   // public SoundManager sound;
+    public SoundManager sound;
+
+    //subtitles
+    public SubtitleManager subs;
 
     void Update()
     {
@@ -73,9 +76,11 @@ public class SubtitleTriggers : MonoBehaviour
 
     public void EnterLevel1lText()
     {
-        timer.enterLv1 = true;
-        FindObjectOfType<SubtitleManager>().StartText(lv1Enter);
+        //timer.enterLv1 = true;
+        //FindObjectOfType<SubtitleManager>().StartText(lv1Enter);
 
+        //subs.voiceoverCount = 10;
+        //sound.PlaySound(subs.voiceoverCount);
        // sound.PlaySound(1);
     }
 
@@ -96,7 +101,7 @@ public class SubtitleTriggers : MonoBehaviour
 
     public void minLeft20Lv1Text()
     {
-        FindObjectOfType<SubtitleManager>().StartText(minLeft20Lv1);
+        //FindObjectOfType<SubtitleManager>().StartText(minLeft20Lv1);
 
         //sound.PlaySound(4);
     }
@@ -112,42 +117,51 @@ public class SubtitleTriggers : MonoBehaviour
     {
         FindObjectOfType<SubtitleManager>().StartText(minLeft5Lv1);
 
-       // sound.PlaySound(6);
+        //subs.voiceoverCount = 28;
+        //sound.PlaySound(subs.voiceoverCount);
+        // sound.PlaySound(6);
     }
 
     public void minLeft0Lv1Text()
     {
         FindObjectOfType<SubtitleManager>().StartText(minLeft0Lv1);
 
+        //subs.voiceoverCount = 29;
+        //sound.PlaySound(subs.voiceoverCount);
         //sound.PlaySound(7);
     }
 
     public void minLeft20Lv2Text()
     {
-        FindObjectOfType<SubtitleManager>().StartText(minLeft20Lv2);
-
+        //FindObjectOfType<SubtitleManager>().StartText(minLeft20Lv2);
         //sound.PlaySound(8);
     }
 
     public void minLeft10Lv2Text()
     {
-        FindObjectOfType<SubtitleManager>().StartText(minLeft10Lv2);
+        //FindObjectOfType<SubtitleManager>().StartText(minLeft10Lv2);
 
-       // sound.PlaySound(9);
+        //subs.voiceoverCount = 27;
+        //sound.PlaySound(subs.voiceoverCount);
+        // sound.PlaySound(9);
     }
 
     public void minLeft5Lv2Text()
     {
-        FindObjectOfType<SubtitleManager>().StartText(minLeft5Lv2);
+        //FindObjectOfType<SubtitleManager>().StartText(minLeft5Lv2);
 
+        //subs.voiceoverCount = 28;
+        //sound.PlaySound(subs.voiceoverCount);
         //sound.PlaySound(10);
     }
 
     public void minLeft0Lv2Text()
     {
-        FindObjectOfType<SubtitleManager>().StartText(minLeft0Lv1);
+        //FindObjectOfType<SubtitleManager>().StartText(minLeft0Lv1);
 
-       // sound.PlaySound(11);
+        //subs.voiceoverCount = 29;
+        //sound.PlaySound(subs.voiceoverCount);
+        // sound.PlaySound(11);
     }
 
 
@@ -156,20 +170,20 @@ public class SubtitleTriggers : MonoBehaviour
     public void FlourineIdentifiedText()
     {
         flourineCheck = true;
-        FindObjectOfType<SubtitleManager>().StartText(flourineIdentified);
+        //FindObjectOfType<SubtitleManager>().StartText(flourineIdentified);
     }
 
     public void ChlorineIdenifiedText()
     {
         chlorineCheck = true;
-        FindObjectOfType<SubtitleManager>().StartText(chlorineIdenified);
+        //FindObjectOfType<SubtitleManager>().StartText(chlorineIdenified);
     }
 
     public void missdentifiedText()
     {
         if (missdentifiedOnceCheck == false)
         {
-            FindObjectOfType<SubtitleManager>().StartText(missdentified);
+            //FindObjectOfType<SubtitleManager>().StartText(missdentified);
             missdentifiedOnceCheck = true;
         }
     }
