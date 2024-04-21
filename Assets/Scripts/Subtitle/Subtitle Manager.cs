@@ -7,11 +7,14 @@ using TMPro;
 public class SubtitleManager : MonoBehaviour
 {
     public SoundManager sound;
-
+    //public GameObject offset;
     public Rigidbody door;
     public GameObject waitForDoorSign;
+    //public GameObject player;
 
     public TMP_Text sentenceText;
+
+    //public GameObject textPanel;
 
     public Queue<string> sentences;
 
@@ -22,6 +25,11 @@ public class SubtitleManager : MonoBehaviour
     public void Start()
     {
         sentences = new Queue<string>();
+    }
+
+    private void FixedUpdate()
+    {
+        //lockSubtitles();
     }
 
     public void StartText (Subtitles subtitle)
@@ -80,5 +88,20 @@ public class SubtitleManager : MonoBehaviour
     {
         sentenceText.text = "";
     }
+     
+
+    //public void lockSubtitles()
+    //{
+    //    if (textPanel.activeSelf == false)
+    //    {
+    //        return;
+    //    }
+
+    //    Vector3 textPanelPosition = Vector3.Lerp(textPanel.transform.position, offset.transform.position, 1f * Time.deltaTime);
+    //    textPanel.transform.position = textPanelPosition;
+
+    //    Quaternion Lookrotation = Quaternion.LookRotation(textPanel.transform.position - player.transform.position, Vector3.up);
+    //    textPanel.transform.rotation = Lookrotation;
+    //}
 
 }

@@ -26,7 +26,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 117242422184684300}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.000051773146}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -186,9 +186,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dacfd6683b30bfe46b17452f135018b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  door: {fileID: 0}
+  waitForDoorSign: {fileID: 0}
   sentenceText: {fileID: 1832019774398382776}
   textTypeSpeed: 0.05
   sentencePause: 1
+  voiceoverCount: 0
 --- !u!114 &6631730522864147201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -367,6 +371,8 @@ MonoBehaviour:
   missdentified:
     sentences:
     - No hints for my little secrets, sorry!
+  sound: {fileID: 0}
+  subs: {fileID: 0}
 --- !u!65 &7546767379337945941
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -419,8 +425,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2837806701975907819}
   - {fileID: 429605780982018318}
+  - {fileID: 2837806701975907819}
   m_Father: {fileID: 0}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

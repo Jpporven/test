@@ -294,7 +294,7 @@ GameObject:
   m_Component:
   - component: {fileID: 900343659495995998}
   - component: {fileID: 1517199000250055751}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Aluminum_Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

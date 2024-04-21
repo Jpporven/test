@@ -90,7 +90,7 @@ public class NotebookManager : MonoBehaviour
     public void Sodium()
     {
         textPage.SetActive(true);
-        elementName.text = "Aluminum";
+        elementName.text = "Sodium";
         description.text = "soft silvery-white metal";
         clue.text = "this is an alkali metal which burns yellow in a flame test with atomic number 11.";
     }
@@ -139,7 +139,7 @@ public class NotebookManager : MonoBehaviour
     public void Sulfur()
     {
         textPage.SetActive(true);
-        elementName.text = "Aluminum";
+        elementName.text = "Sulfur";
         description.text = "pale yellow solid";
         clue.text = "this element is a pale yellow solid that has the symbol S and atomic number 16, has the smell of rotten eggs.";
     }
