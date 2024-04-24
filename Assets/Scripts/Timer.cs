@@ -115,6 +115,10 @@ public class Timer : MonoBehaviour
         if (time < 0)
         {
             timeDisplay = 0;
+
+		 StartCoroutine(Lose());
+
+		
             //Menu.SetActive(true);
         }
 
@@ -131,11 +135,19 @@ public class Timer : MonoBehaviour
             yield return new WaitForSeconds(1);
             time--;
             openingTime--;
-           ;
+           
         }
 
 
     }
+
+    IEnumerator Lose()
+	{
+		yield return new WaitForSeconds(3);
+
+
+		SceneManager.LoadScene("GameOverScene");
+	}
 
 }
 

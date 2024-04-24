@@ -29893,10 +29893,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound: {fileID: 0}
+  Lab2Sound: {fileID: 0}
+  door: {fileID: 0}
+  waitForDoorSign: {fileID: 0}
   sentenceText: {fileID: 1369035477162535118}
   textTypeSpeed: 0.05
   sentencePause: 1
+  enteredLab2: 0
   voiceoverCount: 0
+  Lab2VoiceoverCount: 0
 --- !u!114 &8253189500890672283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30075,6 +30080,10 @@ MonoBehaviour:
   missdentified:
     sentences:
     - No hints for my little secrets, sorry!
+  sound: {fileID: 0}
+  warningSound: {fileID: 0}
+  warningCount: 0
+  subs: {fileID: 0}
 --- !u!114 &2040336398699532407
 MonoBehaviour:
   m_ObjectHideFlags: 0

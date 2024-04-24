@@ -646,6 +646,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Object Respawner (Lab1)
       objectReference: {fileID: 0}
+    - target: {fileID: 771369294270997607, guid: 6629dec03664a23408b491bf58c41c55,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 1903599168504722297, guid: 6629dec03664a23408b491bf58c41c55,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 2293831524544146035, guid: 6629dec03664a23408b491bf58c41c55,
         type: 3}
       propertyPath: tongs
@@ -681,6 +691,11 @@ PrefabInstance:
       propertyPath: potassium
       value: 
       objectReference: {fileID: 2516018982050537482}
+    - target: {fileID: 3788256307963515610, guid: 6629dec03664a23408b491bf58c41c55,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 6930377568276426656, guid: 6629dec03664a23408b491bf58c41c55,
         type: 3}
       propertyPath: m_RootOrder
@@ -735,6 +750,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7517992746245983172, guid: 6629dec03664a23408b491bf58c41c55,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 8898752021197242986, guid: 6629dec03664a23408b491bf58c41c55,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 21
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2632,11 +2657,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Device Simulator
       objectReference: {fileID: 0}
-    - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2656,6 +2676,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1980125883759613428, guid: bb02dcd7fa90a524491a9badffcbb701,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 3908188117664643659, guid: bb02dcd7fa90a524491a9badffcbb701,
         type: 3}
       propertyPath: m_Name

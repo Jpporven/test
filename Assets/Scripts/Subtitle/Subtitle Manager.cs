@@ -7,6 +7,7 @@ using TMPro;
 public class SubtitleManager : MonoBehaviour
 {
     public SoundManager sound;
+    public SoundManager Lab2Sound;
     //public GameObject offset;
     public Rigidbody door;
     public GameObject waitForDoorSign;
@@ -20,11 +21,16 @@ public class SubtitleManager : MonoBehaviour
 
     public float textTypeSpeed = 0.05f;
     public float sentencePause = 1f;
+
+    public bool enteredLab2;
+
     public int voiceoverCount;
+    public int Lab2VoiceoverCount;
 
     public void Start()
     {
         sentences = new Queue<string>();
+	   enteredLab2 = false;
     }
 
     private void FixedUpdate()
@@ -36,7 +42,14 @@ public class SubtitleManager : MonoBehaviour
     {
         sentences.Clear();
 
-        sound.PlaySound(voiceoverCount);
+	  if(!enteredLab2)
+	  {
+		sound.PlaySound(voiceoverCount);
+	  }else
+	  {
+		Lab2Sound.PlaySound(Lab2VoiceoverCount);
+	  }
+        
 
         foreach (string sentence in subtitle.sentences) 
         {
@@ -53,8 +66,19 @@ public class SubtitleManager : MonoBehaviour
             return;
         }
 
-        sound.PlaySound(voiceoverCount);
-        voiceoverCount += 1;
+        if(!enteredLab2)
+	  {
+		sound.PlaySound(voiceoverCount);
+
+		voiceoverCount += 1;
+	  }else
+	  {
+		Lab2Sound.PlaySound(Lab2VoiceoverCount);
+
+		Lab2VoiceoverCount += 1;
+	  }
+
+        
 
         string sentence = sentences.Dequeue();
         StopAllCoroutines();
